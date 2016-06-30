@@ -1,0 +1,225 @@
+<!-- Navigation -->
+<div class="mynavbar">
+<nav class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+       <!-- Brand and toggle get grouped for better mobile display -->
+       <div class="navbar-header page-scroll">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#page-top">meal order</a>
+       </div>
+
+       <!-- Collect the nav links, forms, and other content for toggling -->
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           <ul class="nav navbar-nav navbar-right">
+               <li class="hidden">
+                   <a href="#page-top"></a>
+               </li>
+               <li class="page-scroll">
+                   <a href="#loginpage">login</a>
+               </li>
+                <li class="page-scroll">
+                   <a href="#portfolio">galary</a>
+               </li>
+               <li class="page-scroll">
+                   <a href="#about">About</a>
+               </li>
+            </ul>
+       </div>
+       <!-- /.navbar-collapse --> 
+   </div>
+   <!-- /.container-fluid -->
+</nav>
+</div>
+<!-- Header -->
+
+<header>
+  <link href="stylesheets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="stylesheets/css/ordermeal.css" rel="stylesheet">
+   <div class="container" id="loginpage">
+  
+      </center>
+       <div class="row" >
+           <div class="col-lg-12">
+               <div class="intro-text">
+                   <span class="name">order meal here</span>
+                   <hr>
+                      <form  name="myForm"  action ="check" method="post" >
+      <div class="row">
+   <div class="col-sm-4"></div>
+   <div class="col-sm-4">
+    <label>Email id:</label><input class="form-control" type="text" id="username" name="name"  onblur="validateEmail(this);" ><br>
+    <label>password:</label><input class="form-control" type="password" id="username2" name="password" onblur="validatePass(this);"><br>
+       <center><input type="submit" value="login" class="btn btn-info" style="background-color:#6A5750 "/>
+         
+
+        </center><hr>
+
+
+
+    <script type="text/javascript">
+    function validateEmail(emailField){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(emailField.value) == false)
+        {
+            alert('Invalid Email Address');
+            return false;
+        }
+
+        return true;
+
+    }
+    function validatePass(e){
+
+
+        if ((e.value) == "")
+        {
+            alert('password field empty');
+            return false;
+        }
+
+        return true;
+
+}
+
+    </script>
+    </form>
+                   <span class="skills">Login - Order meal - Enjoy Food</span>
+               </div>
+           </div>
+       </div>
+   </div>
+</header>
+
+<!-- Portfolio Grid Section -->
+<div class="row2">
+<section id="portfolio">
+   <div class="container ">
+       <div class="row">
+           <div class="col-lg-12 text-center">
+               <h2>Galary</h2>
+               <hr>
+           </div>
+       </div>
+       <div class="row ">
+           <div class="col-sm-4 portfolio-item">
+               <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                   <div class="caption">
+                       <div class="caption-content">
+                           <i class="fa fa-search-plus fa-3x"></i>
+                       </div>
+                   </div>
+                   <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+               </a>
+           </div>
+           <div class="col-sm-4 portfolio-item">
+               <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                   <div class="caption">
+                       <div class="caption-content">
+                           <i class="fa fa-search-plus fa-3x"></i>
+                       </div>
+                   </div>
+                   <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+               </a>
+           </div>
+           <div class="col-sm-4 portfolio-item">
+               <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                   <div class="caption">
+                       <div class="caption-content">
+                           <i class="fa fa-search-plus fa-3x"></i>
+                       </div>
+                   </div>
+                   <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+               </a>
+           </div>
+           <div class="col-sm-4 portfolio-item">
+               <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                   <div class="caption">
+                       <div class="caption-content">
+                           <i class="fa fa-search-plus fa-3x"></i>
+                       </div>
+                   </div>
+                   <img src="img/portfolio/game.png" class="img-responsive" alt="">
+               </a>
+           </div>
+           <div class="col-sm-4 portfolio-item">
+               <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                   <div class="caption">
+                       <div class="caption-content">
+                           <i class="fa fa-search-plus fa-3x"></i>
+                       </div>
+                   </div>
+                   <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+               </a>
+           </div>
+           <div class="col-sm-4 portfolio-item">
+               <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                   <div class="caption">
+                       <div class="caption-content">
+                           <i class="fa fa-search-plus fa-3x"></i>
+                       </div>
+                   </div>
+                   <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+               </a>
+           </div>
+       </div>
+   </div>
+</section>
+</div>
+<!-- About Section -->
+<section class="success" id="about">
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-12 text-center">
+               <h2>About</h2>
+               <hr>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-lg-4 col-lg-offset-2">
+               <p>The leaves contain a pigment called chlorophyll, which colors the leaves green. Chlorophyll can make food the plant can use from carbon dioxide, During the process of photosynthesis, plants release oxygen into the air.</p>
+           </div>
+           <div class="col-lg-4">
+               <p>Learn how to make healthier food choices when selecting and preparing fruits, vegetables, grains, lean meats and dairy.</p>
+           </div>
+       </div>
+   </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-center">
+   <div class="footer-above">
+       <div class="container">
+           <div class="row">
+               <div class="footer-col col-md-6">
+                   <h3>Location</h3>
+                   <p>234 Sadashiv peth<br>nagnath par, Pune 411002</p>
+               </div>
+               <div class="footer-col col-md-6">
+                   <h3>Call us</h3>
+                   <p>09 34 45 23 45 23</p>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="footer-below">
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-12">
+                   Copyright &copy; manish pendse
+               </div>
+           </div>
+       </div>
+   </div>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
